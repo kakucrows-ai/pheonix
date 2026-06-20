@@ -776,3 +776,6 @@ body::before {
   z-index: 9999;
   opacity: 0.8;
 }
+
+/* FIXED: .hidden utility class — controls initial visibility without inline display:none conflicting with flex-direction */
+.hidden { display: none; } /* app.js overrides via inline style.display on login/logout */

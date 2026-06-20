@@ -30,7 +30,7 @@ function fmtMem(mb)  { return mb >= 1024 ? `${(mb/1024).toFixed(1)}GB` : `${mb}M
 
 // ── Auth ──────────────────────────────────────────────────────────────────────
 let _token = sessionStorage.getItem("token") || "";
-const _base = "https://messenger-bot-production-c98b.up.railway.app";
+const _base = "";
 
 function getToken()  { return _token; }
 function setToken(t) { _token = t; sessionStorage.setItem("token", t); }

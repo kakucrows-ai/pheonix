@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * musicEngine — production-grade audio delivery engine for Madox bot.
+ * musicEngine — production-grade audio delivery engine for Phoenix bot. // FIXED: updated bot name from Madox to Phoenix
  *
  * Provider chain:
  *   1. YouTube via yt-dlp — tries 4 player clients in sequence:
@@ -24,7 +24,8 @@ const https  = require("https");
 const http   = require("http");
 const { spawn, execFile } = require("child_process");
 
-const logger = require("./logger");
+const logger   = require("./logger");
+const ytSearch = require("yt-search"); // FIXED: moved from inside _searchYouTube() to module top-level to avoid repeated require() on every call
 
 // ── Config ────────────────────────────────────────────────────────────────────
 const TMP_DIR          = path.join(os.tmpdir(), "madox_music");
@@ -271,7 +272,6 @@ function _findFfmpeg() {
 
 // ── Provider 1: YouTube ───────────────────────────────────────────────────────
 async function _searchYouTube(query) {
-  const ytSearch = require("yt-search");
   const result   = await withTimeout(ytSearch(query), SEARCH_TIMEOUT, "YouTube search");
   const videos   = (result.videos || []).filter(v =>
     v.seconds && v.seconds > 15 && v.seconds < MAX_DURATION_SEC
@@ -399,7 +399,7 @@ async function search(query) {
 async function download(track) {
   if (_sem.total >= QUEUE_MAX) throw new Error("قائمة الانتظار ممتلئة، حاول بعد قليل.");
 
-  const ext     = track.provider === "itunes" ? "m4a" : "m4a";
+  const ext     = track.provider === "itunes" ? "m4a" : "mp3"; // FIXED: both branches were identical "m4a" (dead ternary); YouTube downloads use mp3
   const outPath = path.join(TMP_DIR, "music_" + Date.now() + "_" + Math.random().toString(36).slice(2) + "." + ext);
   const release = await _sem.acquire();
 

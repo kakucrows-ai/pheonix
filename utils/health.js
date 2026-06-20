@@ -12,13 +12,20 @@ const CHECK_INTERVAL  = 30000;
 let _onCritical  = null;
 let _diagnostics = null;
 let _lastReport  = null;
+let _prevCpus    = null; // FIXED: stores previous CPU snapshot for delta-based calculation
 
 function _memMB()  { return Math.round(process.memoryUsage().rss / 1024 / 1024); }
 function _cpuPct() {
+  // FIXED: use delta between two snapshots instead of lifetime aggregate (was always returning a lifetime average, not current CPU%)
   const cpus = os.cpus();
   let idle = 0, total = 0;
   for (const c of cpus) { for (const t of Object.values(c.times)) total += t; idle += c.times.idle; }
-  return total ? ((1 - idle / total) * 100) : 0;
+  const snap = { idle, total };
+  if (!_prevCpus) { _prevCpus = snap; return 0; }
+  const dIdle  = snap.idle  - _prevCpus.idle;
+  const dTotal = snap.total - _prevCpus.total;
+  _prevCpus = snap;
+  return dTotal ? ((1 - dIdle / dTotal) * 100) : 0;
 }
 function _loopLag() {
   return new Promise(resolve => {

@@ -39,7 +39,8 @@ module.exports = {
   remove(id) {
     const s = String(id).trim();
     const i = _adminIDs.indexOf(s);
-    if (i <= 0) return false;   // 0 = primary admin — never remove
+    if (i === -1) return false;  // FIXED: explicitly handle not-found case (was ambiguously grouped with primary-admin check)
+    if (i === 0)  return false;  // FIXED: primary admin — never remove; separated from not-found case for clarity
     _adminIDs.splice(i, 1);
     _save();
     return true;

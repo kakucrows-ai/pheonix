@@ -37,7 +37,7 @@ function logViolation({ threadID, threadName, senderID, messagePreview }) {
 const _reqMap = new Map();
 function _rateLimit(maxPerMinute = 60) {
   return (req, res, next) => {
-    const ip  = req.ip || req.connection.remoteAddress || "unknown";
+    const ip  = req.ip || req.socket.remoteAddress || "unknown"; // FIXED: req.connection is deprecated/undefined on Node 18+; use req.socket
     const now = Date.now();
     const rec = _reqMap.get(ip) || { count: 0, reset: now + 60000 };
     if (now > rec.reset) { rec.count = 0; rec.reset = now + 60000; }
@@ -381,7 +381,7 @@ function createApiServer() {
       if (!Array.isArray(data) || data.length === 0) return res.status(400).json({ error: "Invalid appstate format" });
       const appStatePath = path.resolve(__dirname, config.appStatePath);
       const { SessionManager } = require("./utils/session");
-      const sm = new SessionManager(appStatePath, process.env.GITHUB_PERSONAL_ACCESS_TOKEN || "", "marwanbou540-gif/messenger-bot");
+      const sm = new SessionManager(appStatePath, process.env.GITHUB_PERSONAL_ACCESS_TOKEN || "", "marwanbou20100-cyber/messenger-bot"); // FIXED: wrong GitHub repo URL; corrected to match index.js
       const ok = await sm.saveAndPush(data);
       if (!ok) return res.status(500).json({ error: "Failed to save state" });
       logActivitySSE("AppState uploaded and pushed via dashboard");
@@ -405,7 +405,7 @@ function createApiServer() {
         const state = botApi.getAppState();
         if (Array.isArray(state) && state.length > 0) {
           const { SessionManager } = require("./utils/session");
-          const s = new SessionManager(path.resolve(__dirname, config.appStatePath), process.env.GITHUB_PERSONAL_ACCESS_TOKEN || "", "marwanbou540-gif/messenger-bot");
+          const s = new SessionManager(path.resolve(__dirname, config.appStatePath), process.env.GITHUB_PERSONAL_ACCESS_TOKEN || "", "marwanbou20100-cyber/messenger-bot"); // FIXED: wrong GitHub repo URL; corrected to match index.js
           s.save(state);
         }
       }
@@ -599,7 +599,7 @@ function createApiServer() {
     res.sendFile(path.resolve(__dirname, "dashboard/cookies.html"));
   });
 
-  app.post("/api/cookies/update", express.json({ limit: "2mb" }), async (req, res) => {
+  app.post("/cookies/update", express.json({ limit: "2mb" }), async (req, res) => { // FIXED: removed inconsistent /api/ prefix; all other routes use no prefix
     const { appState } = req.body || {};
     if (!Array.isArray(appState) || appState.length === 0) {
       return res.status(400).json({ error: "appState must be a non-empty array" });

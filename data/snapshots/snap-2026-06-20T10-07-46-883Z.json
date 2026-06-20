@@ -1,0 +1,249 @@
+{
+  "ts": 1781950066883,
+  "reason": "auto_recurring_Bot",
+  "process": {
+    "pid": 582,
+    "uptime": 1801,
+    "version": "v24.13.0",
+    "platform": "linux",
+    "mem": {
+      "rss": 114,
+      "heapUsed": 26,
+      "heapTotal": 27
+    }
+  },
+  "system": {
+    "loadAvg": [
+      0,
+      0.04,
+      0.02
+    ],
+    "freeMem": 4697,
+    "totMem": 7935
+  },
+  "recentErrors": [
+    {
+      "time": 1781948266864,
+      "tag": "Bot",
+      "message": "Error retrieving userID. This can be caused by many factors, including being blocked by Facebook for logging in from an unknown location. Try logging in with a browser to verify.",
+      "stack": "Error: Error retrieving userID. This can be caused by many factors, including being blocked by Facebook for logging in from an unknown location. Try logging in with a browser to verify.\n    at /home/runner/workspace/artifacts/messenger-bot/index.js:407:38\n    at /home/runner/workspace/node_modules/.pnpm/@neoaz07+nkxfca@1.0.10/node_modules/@neoaz07/nkxfca/src/engine/client.js:73:24\n    at loginHelper (/home/runner/workspace/node_modules/.pnpm/@neoaz07+nkxfca@1.0.10/node_modules/@neoaz07/nkxfca/src/engine/models/loginHelper.js:570:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)",
+      "fp": "Error:Error retrieving userID. This can be caused by many factors,:Error: Error retrieving userID. This can be caused by many factors, including being blocked by Faceb",
+      "count": 1,
+      "ctx": {}
+    },
+    {
+      "time": 1781948312402,
+      "tag": "Bot",
+      "message": "Error retrieving userID. This can be caused by many factors, including being blocked by Facebook for logging in from an unknown location. Try logging in with a browser to verify.",
+      "stack": "Error: Error retrieving userID. This can be caused by many factors, including being blocked by Facebook for logging in from an unknown location. Try logging in with a browser to verify.\n    at /home/runner/workspace/artifacts/messenger-bot/index.js:407:38\n    at /home/runner/workspace/node_modules/.pnpm/@neoaz07+nkxfca@1.0.10/node_modules/@neoaz07/nkxfca/src/engine/client.js:73:24\n    at loginHelper (/home/runner/workspace/node_modules/.pnpm/@neoaz07+nkxfca@1.0.10/node_modules/@neoaz07/nkxfca/src/engine/models/loginHelper.js:570:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)",
+      "fp": "Error:Error retrieving userID. This can be caused by many factors,:Error: Error retrieving userID. This can be caused by many factors, including being blocked by Faceb",
+      "count": 2,
+      "ctx": {}
+    },
+    {
+      "time": 1781948380398,
+      "tag": "Bot",
+      "message": "Error retrieving userID. This can be caused by many factors, including being blocked by Facebook for logging in from an unknown location. Try logging in with a browser to verify.",
+      "stack": "Error: Error retrieving userID. This can be caused by many factors, including being blocked by Facebook for logging in from an unknown location. Try logging in with a browser to verify.\n    at /home/runner/workspace/artifacts/messenger-bot/index.js:407:38\n    at /home/runner/workspace/node_modules/.pnpm/@neoaz07+nkxfca@1.0.10/node_modules/@neoaz07/nkxfca/src/engine/client.js:73:24\n    at loginHelper (/home/runner/workspace/node_modules/.pnpm/@neoaz07+nkxfca@1.0.10/node_modules/@neoaz07/nkxfca/src/engine/models/loginHelper.js:570:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)",
+      "fp": "Error:Error retrieving userID. This can be caused by many factors,:Error: Error retrieving userID. This can be caused by many factors, including being blocked by Faceb",
+      "count": 3,
+      "ctx": {}
+    },
+    {
+      "time": 1781948482233,
+      "tag": "Bot",
+      "message": "Error retrieving userID. This can be caused by many factors, including being blocked by Facebook for logging in from an unknown location. Try logging in with a browser to verify.",
+      "stack": "Error: Error retrieving userID. This can be caused by many factors, including being blocked by Facebook for logging in from an unknown location. Try logging in with a browser to verify.\n    at /home/runner/workspace/artifacts/messenger-bot/index.js:407:38\n    at /home/runner/workspace/node_modules/.pnpm/@neoaz07+nkxfca@1.0.10/node_modules/@neoaz07/nkxfca/src/engine/client.js:73:24\n    at loginHelper (/home/runner/workspace/node_modules/.pnpm/@neoaz07+nkxfca@1.0.10/node_modules/@neoaz07/nkxfca/src/engine/models/loginHelper.js:570:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)",
+      "fp": "Error:Error retrieving userID. This can be caused by many factors,:Error: Error retrieving userID. This can be caused by many factors, including being blocked by Faceb",
+      "count": 4,
+      "ctx": {}
+    },
+    {
+      "time": 1781948634539,
+      "tag": "Bot",
+      "message": "Error retrieving userID. This can be caused by many factors, including being blocked by Facebook for logging in from an unknown location. Try logging in with a browser to verify.",
+      "stack": "Error: Error retrieving userID. This can be caused by many factors, including being blocked by Facebook for logging in from an unknown location. Try logging in with a browser to verify.\n    at /home/runner/workspace/artifacts/messenger-bot/index.js:407:38\n    at /home/runner/workspace/node_modules/.pnpm/@neoaz07+nkxfca@1.0.10/node_modules/@neoaz07/nkxfca/src/engine/client.js:73:24\n    at loginHelper (/home/runner/workspace/node_modules/.pnpm/@neoaz07+nkxfca@1.0.10/node_modules/@neoaz07/nkxfca/src/engine/models/loginHelper.js:570:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)",
+      "fp": "Error:Error retrieving userID. This can be caused by many factors,:Error: Error retrieving userID. This can be caused by many factors, including being blocked by Faceb",
+      "count": 5,
+      "ctx": {}
+    },
+    {
+      "time": 1781948862908,
+      "tag": "Bot",
+      "message": "Error retrieving userID. This can be caused by many factors, including being blocked by Facebook for logging in from an unknown location. Try logging in with a browser to verify.",
+      "stack": "Error: Error retrieving userID. This can be caused by many factors, including being blocked by Facebook for logging in from an unknown location. Try logging in with a browser to verify.\n    at /home/runner/workspace/artifacts/messenger-bot/index.js:407:38\n    at /home/runner/workspace/node_modules/.pnpm/@neoaz07+nkxfca@1.0.10/node_modules/@neoaz07/nkxfca/src/engine/client.js:73:24\n    at loginHelper (/home/runner/workspace/node_modules/.pnpm/@neoaz07+nkxfca@1.0.10/node_modules/@neoaz07/nkxfca/src/engine/models/loginHelper.js:570:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)",
+      "fp": "Error:Error retrieving userID. This can be caused by many factors,:Error: Error retrieving userID. This can be caused by many factors, including being blocked by Faceb",
+      "count": 6,
+      "ctx": {}
+    },
+    {
+      "time": 1781949163563,
+      "tag": "Bot",
+      "message": "Error retrieving userID. This can be caused by many factors, including being blocked by Facebook for logging in from an unknown location. Try logging in with a browser to verify.",
+      "stack": "Error: Error retrieving userID. This can be caused by many factors, including being blocked by Facebook for logging in from an unknown location. Try logging in with a browser to verify.\n    at /home/runner/workspace/artifacts/messenger-bot/index.js:407:38\n    at /home/runner/workspace/node_modules/.pnpm/@neoaz07+nkxfca@1.0.10/node_modules/@neoaz07/nkxfca/src/engine/client.js:73:24\n    at loginHelper (/home/runner/workspace/node_modules/.pnpm/@neoaz07+nkxfca@1.0.10/node_modules/@neoaz07/nkxfca/src/engine/models/loginHelper.js:570:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)",
+      "fp": "Error:Error retrieving userID. This can be caused by many factors,:Error: Error retrieving userID. This can be caused by many factors, including being blocked by Faceb",
+      "count": 7,
+      "ctx": {}
+    },
+    {
+      "time": 1781949464246,
+      "tag": "Bot",
+      "message": "Error retrieving userID. This can be caused by many factors, including being blocked by Facebook for logging in from an unknown location. Try logging in with a browser to verify.",
+      "stack": "Error: Error retrieving userID. This can be caused by many factors, including being blocked by Facebook for logging in from an unknown location. Try logging in with a browser to verify.\n    at /home/runner/workspace/artifacts/messenger-bot/index.js:407:38\n    at /home/runner/workspace/node_modules/.pnpm/@neoaz07+nkxfca@1.0.10/node_modules/@neoaz07/nkxfca/src/engine/client.js:73:24\n    at loginHelper (/home/runner/workspace/node_modules/.pnpm/@neoaz07+nkxfca@1.0.10/node_modules/@neoaz07/nkxfca/src/engine/models/loginHelper.js:570:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)",
+      "fp": "Error:Error retrieving userID. This can be caused by many factors,:Error: Error retrieving userID. This can be caused by many factors, including being blocked by Faceb",
+      "count": 8,
+      "ctx": {}
+    },
+    {
+      "time": 1781949766299,
+      "tag": "Bot",
+      "message": "Error retrieving userID. This can be caused by many factors, including being blocked by Facebook for logging in from an unknown location. Try logging in with a browser to verify.",
+      "stack": "Error: Error retrieving userID. This can be caused by many factors, including being blocked by Facebook for logging in from an unknown location. Try logging in with a browser to verify.\n    at /home/runner/workspace/artifacts/messenger-bot/index.js:407:38\n    at /home/runner/workspace/node_modules/.pnpm/@neoaz07+nkxfca@1.0.10/node_modules/@neoaz07/nkxfca/src/engine/client.js:73:24\n    at loginHelper (/home/runner/workspace/node_modules/.pnpm/@neoaz07+nkxfca@1.0.10/node_modules/@neoaz07/nkxfca/src/engine/models/loginHelper.js:570:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)",
+      "fp": "Error:Error retrieving userID. This can be caused by many factors,:Error: Error retrieving userID. This can be caused by many factors, including being blocked by Faceb",
+      "count": 9,
+      "ctx": {}
+    },
+    {
+      "time": 1781950066882,
+      "tag": "Bot",
+      "message": "Error retrieving userID. This can be caused by many factors, including being blocked by Facebook for logging in from an unknown location. Try logging in with a browser to verify.",
+      "stack": "Error: Error retrieving userID. This can be caused by many factors, including being blocked by Facebook for logging in from an unknown location. Try logging in with a browser to verify.\n    at /home/runner/workspace/artifacts/messenger-bot/index.js:407:38\n    at /home/runner/workspace/node_modules/.pnpm/@neoaz07+nkxfca@1.0.10/node_modules/@neoaz07/nkxfca/src/engine/client.js:73:24\n    at loginHelper (/home/runner/workspace/node_modules/.pnpm/@neoaz07+nkxfca@1.0.10/node_modules/@neoaz07/nkxfca/src/engine/models/loginHelper.js:570:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)",
+      "fp": "Error:Error retrieving userID. This can be caused by many factors,:Error: Error retrieving userID. This can be caused by many factors, including being blocked by Faceb",
+      "count": 10,
+      "ctx": {}
+    }
+  ],
+  "topErrors": [
+    {
+      "time": 1781950066882,
+      "tag": "Bot",
+      "message": "Error retrieving userID. This can be caused by many factors, including being blocked by Facebook for logging in from an unknown location. Try logging in with a browser to verify.",
+      "stack": "Error: Error retrieving userID. This can be caused by many factors, including being blocked by Facebook for logging in from an unknown location. Try logging in with a browser to verify.\n    at /home/runner/workspace/artifacts/messenger-bot/index.js:407:38\n    at /home/runner/workspace/node_modules/.pnpm/@neoaz07+nkxfca@1.0.10/node_modules/@neoaz07/nkxfca/src/engine/client.js:73:24\n    at loginHelper (/home/runner/workspace/node_modules/.pnpm/@neoaz07+nkxfca@1.0.10/node_modules/@neoaz07/nkxfca/src/engine/models/loginHelper.js:570:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)",
+      "fp": "Error:Error retrieving userID. This can be caused by many factors,:Error: Error retrieving userID. This can be caused by many factors, including being blocked by Faceb",
+      "count": 10,
+      "ctx": {}
+    }
+  ],
+  "healthHistory": [
+    {
+      "memMB": 111,
+      "cpuPct": 2.4,
+      "loopLagMs": 0.1,
+      "ts": 1781949496411
+    },
+    {
+      "memMB": 111,
+      "cpuPct": 2.5,
+      "loopLagMs": 0.1,
+      "ts": 1781949526413
+    },
+    {
+      "memMB": 111,
+      "cpuPct": 2.4,
+      "loopLagMs": 0,
+      "ts": 1781949556433
+    },
+    {
+      "memMB": 111,
+      "cpuPct": 2.5,
+      "loopLagMs": 0.1,
+      "ts": 1781949586434
+    },
+    {
+      "memMB": 111,
+      "cpuPct": 2.4,
+      "loopLagMs": 0.3,
+      "ts": 1781949616466
+    },
+    {
+      "memMB": 111,
+      "cpuPct": 2.4,
+      "loopLagMs": 0.1,
+      "ts": 1781949646466
+    },
+    {
+      "memMB": 111,
+      "cpuPct": 2.4,
+      "loopLagMs": 0.1,
+      "ts": 1781949676487
+    },
+    {
+      "memMB": 111,
+      "cpuPct": 2.4,
+      "loopLagMs": 0.1,
+      "ts": 1781949706489
+    },
+    {
+      "memMB": 111,
+      "cpuPct": 2.4,
+      "loopLagMs": 0.3,
+      "ts": 1781949736508
+    },
+    {
+      "memMB": 113,
+      "cpuPct": 2.3,
+      "loopLagMs": 0.1,
+      "ts": 1781949766508
+    },
+    {
+      "memMB": 113,
+      "cpuPct": 2.3,
+      "loopLagMs": 0,
+      "ts": 1781949796536
+    },
+    {
+      "memMB": 113,
+      "cpuPct": 2.3,
+      "loopLagMs": 0,
+      "ts": 1781949826536
+    },
+    {
+      "memMB": 113,
+      "cpuPct": 2.3,
+      "loopLagMs": 0.1,
+      "ts": 1781949856566
+    },
+    {
+      "memMB": 113,
+      "cpuPct": 2.3,
+      "loopLagMs": 0.1,
+      "ts": 1781949886566
+    },
+    {
+      "memMB": 113,
+      "cpuPct": 2.2,
+      "loopLagMs": 0.5,
+      "ts": 1781949916600
+    },
+    {
+      "memMB": 113,
+      "cpuPct": 2.2,
+      "loopLagMs": 0,
+      "ts": 1781949946598
+    },
+    {
+      "memMB": 113,
+      "cpuPct": 2.2,
+      "loopLagMs": 0.1,
+      "ts": 1781949976628
+    },
+    {
+      "memMB": 113,
+      "cpuPct": 2.2,
+      "loopLagMs": 0.1,
+      "ts": 1781950006628
+    },
+    {
+      "memMB": 113,
+      "cpuPct": 2.2,
+      "loopLagMs": 0.1,
+      "ts": 1781950036659
+    },
+    {
+      "memMB": 113,
+      "cpuPct": 2.2,
+      "loopLagMs": 0.2,
+      "ts": 1781950066660
+    }
+  ]
+}

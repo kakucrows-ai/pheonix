@@ -31,7 +31,7 @@ module.exports = {
     const prefix     = config.prefix;
 
     function _setNick(nick, tid, uid) {
-      return new Promise((res, rej) => api.nickname(nick, tid, uid, e => e ? rej(e) : res()));
+      return new Promise((res, rej) => api.changeNickname(nick, tid, uid, e => e ? rej(e) : res())); // FIXED: api.nickname() does not exist; correct method is api.changeNickname()
     }
 
     // ── locks: عرض الكنيات المقفولة ────────────────────────────────────────

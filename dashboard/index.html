@@ -22,7 +22,7 @@
       <p class="login-sub">نظام التحكم المتقدم • v2.1.0</p>
       <div class="form-group">
         <label>مفتاح الوصول</label>
-        <input id="loginKey" type="password" placeholder="أدخل المفتاح السري…" autocomplete="off" />
+        <input id="loginKey" type="password" placeholder="أدخل المفتاح السري…" autocomplete="off" onkeydown="if(event.key==='Enter')doLogin()" /> <!-- FIXED: added Enter key handler so pressing Enter submits login -->
         <div id="loginError" class="login-error"></div>
       </div>
       <button id="loginBtn" class="btn primary" style="width:100%;margin-top:8px" onclick="doLogin()">دخول</button>
@@ -30,7 +30,7 @@
   </div>
 
   <!-- MAIN APP -->
-  <div id="app" style="display:none;flex-direction:column;min-height:100vh">
+  <div id="app" class="hidden" style="flex-direction:column;min-height:100vh"> <!-- FIXED: removed display:none from inline style (conflicted with flex-direction); visibility now controlled by .hidden class in styles.css -->
 
     <!-- TOPBAR -->
     <div class="topbar">

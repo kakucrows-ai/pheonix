@@ -95,6 +95,7 @@ function _log(levelNum, levelLabel, tag, args) {
 }
 
 function success(tag, ...args) {
+  if (LEVELS.OK < _minLevel) return; // FIXED: success/OK level now respects minLevel filter like all other levels
   _write("OK", tag, args);
   if (_silent) return;
   const parts = args.map(a => typeof a === "object" ? JSON.stringify(a) : String(a));
